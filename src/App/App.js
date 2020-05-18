@@ -1,4 +1,9 @@
 import React from 'react';
+
+import Auth from '../components/Auth/Auth';
+import MyNavbar from '../components/MyNavbar/MyNavbar';
+import BoardContainer from '../components/BoardContainer/BoardContainer';
+
 import './App.scss';
 
 class App extends React.Component {
@@ -6,7 +11,9 @@ class App extends React.Component {
     return (
       <div className="App">
         <h2>React Pinterest</h2>
-        <button className="btn btn-dark"><i class="fab fa-pinterest fa-3x"></i></button>
+        <MyNavbar />
+        <Auth />
+        <BoardContainer />
       </div>
     );
   }
